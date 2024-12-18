@@ -1,5 +1,7 @@
 import AcmeLogo from "@/app/ui/acme-logo";
 import LoginForm from "@/app/ui/login-form";
+import { Metadata } from "next";
+import { globalMetadata } from "../layout";
 
 export default function LoginPage() {
   return (
@@ -15,3 +17,9 @@ export default function LoginPage() {
     </main>
   );
 }
+
+export const metadata: Metadata = {
+  ...globalMetadata,
+  title: "Login | Acme Dashboard",
+  description: "Login to access your Acme Dashboard account.",
+};
