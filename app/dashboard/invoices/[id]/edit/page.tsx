@@ -3,7 +3,7 @@ import Breadcrumbs from "@/app/ui/invoices/breadcrumbs";
 import { fetchCustomers, fetchInvoiceById } from "@/app/lib/data";
 import { notFound } from "next/navigation";
 import { Metadata } from "next";
-import { globalMetadata } from "@/app/layout";
+import { metadata as globalMetadata } from "@/app/layout";
 
 export default async function Page(props: { params: Promise<{ id: string }> }) {
   const params = await props.params;

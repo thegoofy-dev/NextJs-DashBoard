@@ -15,7 +15,7 @@ export default function RootLayout({
   );
 }
 
-export const globalMetadata: Metadata = {
+export const metadata: Metadata = {
   title: {
     template: "%s | Acme Dashboard",
     default: "Acme Dashboard",

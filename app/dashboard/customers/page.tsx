@@ -1,5 +1,5 @@
 import { Metadata } from "next";
-import { globalMetadata } from "@/app/layout";
+import { metadata as globalMetadata } from "@/app/layout";
 
 export default function page() {
   return <p> Customers page</p>;
